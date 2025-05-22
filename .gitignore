@@ -1,0 +1,36 @@
+# PowerShell auto-generated files
+*.psprojs
+*.pssc
+*.cdxml
+*.dll
+*.psd1
+*.psm1
+*.ps1xml
+*.clixml
+*.format.ps1xml
+*.ps1data
+*.ps1obj
+*.clixmldata
+
+# Windows-specific
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# VS Code files (optional, might want to keep some)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Logs and temp files
+*.log
+*.tmp
