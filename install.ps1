@@ -25,7 +25,7 @@ New-Item -ItemType Directory -Force -Path $configDir | Out-Null
 New-Item -ItemType Directory -Force -Path $pwshDir   | Out-Null
 
 # --- GitHub raw content base URL ---
-$base = "https://raw.githubusercontent.com/Proce2/starship-setup/main"
+$base = "https://raw.githubusercontent.com/Proce2/starship-pwsh-setup/main"
 
 # --- Download Starship Configs ---
 Invoke-WebRequest "$base/starship.toml"        -OutFile "$configDir\starship.toml"
