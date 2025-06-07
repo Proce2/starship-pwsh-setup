@@ -1,7 +1,7 @@
+# PowerSheell 7+ setup for Starship  VScode Integration
 # Starship for PowerShell 7+ with VSCode Integration
 
 A setup for PowerShell 7+ with the [Starship prompt](https://starship.rs) that **preserves VSCode terminal features** and **fixes Copilot Prompt Symbol issues**.
-This setup maintains full VSCode terminal functionality while giving you Starship prompts when you want them.
 
 ## Why This Setup?
 
@@ -24,11 +24,8 @@ irm https://raw.githubusercontent.com/Proce2/starship-pwsh-setup/main/install.ps
 ## Features
 
 - ✅ Preserves VSCode terminal features (command status, IntelliSense)
-- 🚀 **Smart Prompt Switching**: Easy commands to switch between prompts without losing functionality
-- 🔄 Multiple prompt configurations (regular, AWS mode, advanced PowerShell-native)
 - 🛡️ Safe installation with environment checks
 - 🔌 Easy one-line install from GitHub
-- 🤖 **Copilot Prompt Symbol compatibility** (Note: Copilot agent mode requires terminal without Starship)
 
 ## Instructions
 
@@ -38,7 +35,8 @@ irm https://raw.githubusercontent.com/Proce2/starship-pwsh-setup/main/install.ps
    - `p a` - Activate advanced PowerShell-native prompt (**maintains VSCode integration**)
    - `p off` - Switch to standard PowerShell prompt appearance
   
-2. Keep normal prompt in terminals where you need Copilot agent, use Starship in others
+2. **Copilot Agent work-around**:
+   - Keep normal prompt in terminals where you need Copilot agent, use Starship in others
 
 ## Manual Installation
 
