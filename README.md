@@ -1,5 +1,4 @@
-# PowerSheell 7+ setup for Starship  VScode Integration
-# Starship for PowerShell 7+ with VSCode Integration
+# PowerShell 7 Setup for Starship Prompt Integration with VSCode Terminal
 
 A setup for PowerShell 7+ with the [Starship prompt](https://starship.rs) that **preserves VSCode terminal features** and **fixes Copilot Prompt Symbol issues**.
 
