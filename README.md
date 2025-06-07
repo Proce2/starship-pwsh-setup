@@ -1,6 +1,7 @@
 # Starship for PowerShell 7+ with VSCode Integration
 
-A clean setup for PowerShell 7+ with the [Starship prompt](https://starship.rs) that **preserves VSCode terminal features** and **fixes Copilot Prompt Symbol issues**.
+A setup for PowerShell 7+ with the [Starship prompt](https://starship.rs) that **preserves VSCode terminal features** and **fixes Copilot Prompt Symbol issues**.
+This setup maintains full VSCode terminal functionality while giving you Starship prompts when you want them.
 
 ## Why This Setup?
 
@@ -8,8 +9,6 @@ Using Starship directly in VSCode terminals breaks important features:
 - ❌ No command status indicators (blue circle for success / red X in red circle for failure)
 - ❌ Lost IntelliSense and autocomplete features 
 - ❌ GitHub Copilot Prompt Symbol doesn't show, and Copilot agent stops working
-
-This setup maintains full VSCode terminal functionality while giving you Starship prompts when you want them.
 
 ## Prerequisites
 
@@ -38,23 +37,8 @@ irm https://raw.githubusercontent.com/Proce2/starship-pwsh-setup/main/install.ps
    - `p s aws` - Activate Starship with AWS enhancements  
    - `p a` - Activate advanced PowerShell-native prompt (**maintains VSCode integration**)
    - `p off` - Switch to standard PowerShell prompt appearance
-
-1. **Multiple Starship configurations**:
-   - Custom configuration (`starship.toml`)
-   - AWS-enhanced configuration (`starship_aws_on.toml`)
-
-2. **PowerShell helper scripts**:
-   - `advanced-prompt.ps1` - **VSCode-compatible** PowerShell-native prompt with full terminal integration
-   - `starship-prompt.ps1` - Optimized Starship integration for PowerShell
-   - `Microsoft.PowerShell_profile.ps1` - Main profile with intelligent prompt switcher
-
-## Key Benefits
-
-- **Copilot Prompt Symbol**: Works perfectly when using Starship mode
-- **Copilot Agent Protection**: Keep normal prompt in terminals where you need Copilot agent, use Starship in others
-- **Command Status**: Visual indicators for command success/failure in VSCode
-- **IntelliSense**: Full autocomplete and IntelliSense support
-- **Best of Both Worlds**: Beautiful prompts when you want them, full functionality when you need it
+  
+2. Keep normal prompt in terminals where you need Copilot agent, use Starship in others
 
 ## Manual Installation
 
