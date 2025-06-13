@@ -1,6 +1,6 @@
 # PowerShell Setup Fix for VSCode Terminal Features Overridden by Starship
 
-This setup for PowerShell 7+ lets you use the Starship prompt in the VSCode terminal without breaking important features. It restores IntelliSense, command decorations, and GitHub Copilot prompt support, all part of VSCode’s Shell Integration.
+A PowerShell 7 configuration that preserves VSCode terminal features while using the [Starship prompt](https://starship.rs). These features include IntelliSense, command decorations, and GitHub Copilot prompt support.
 
 🔧 **Problem Overview**
 
@@ -9,8 +9,6 @@ Using Starship in the VSCode terminal often causes:
 - IntelliSense and autocomplete to stop working
 - Command decorations (blue circle for success, red ❌ in red circle for failure) to disappear
 - GitHub Copilot’s prompt icon to vanish or stop responding
-
-These are all part of VSCode terminal features that rely on shell integration. This configuration restores them without disabling Starship.
 
 ✅ **What You Need**
 
@@ -56,8 +54,6 @@ cd starship-pwsh-setup
 Then restart your terminal session.
 
 ✏️ **Customization**
-
-This configuration is fully editable:
 
 - Modify `.toml` files to change the Starship prompt design
 - Add your own PowerShell functions, aliases, or module imports to the scripts
