@@ -1,49 +1,48 @@
-# PowerShell Setup Fix for VSCode Terminal Features Overridden by Starship
+# PowerShell Scripts That Fix Starship and VSCode Terminal Issues
 
 A PowerShell 7 configuration that preserves VSCode terminal features while using the [Starship prompt](https://starship.rs). These features include IntelliSense, command decorations, and GitHub Copilot prompt support.
 
-🔧 **Problem Overview**
+## 🔧 Problem Overview
 
 Using Starship in the VSCode terminal often causes:
 
-- IntelliSense and autocomplete to stop working
-- Command decorations (blue circle for success, red ❌ in red circle for failure) to disappear
-- GitHub Copilot’s prompt icon to vanish or stop responding
+- IntelliSense suggestions (the selection box with completions) to stop appearing
+- Command decorations (blue circle for success, red ❌ in red circle for failure) to disappear  
+- GitHub Copilot’s prompt icon to vanish or stop responding  
 
-✅ **What You Need**
+These are all part of VSCode terminal features that rely on shell integration. This configuration restores them without disabling Starship.
 
-- PowerShell 7+
-- Starship installed and available in your system PATH
+## ✅ Prerequisites
 
-⚙️ **One-Line Installation**
+- [PowerShell 7+](https://github.com/PowerShell/PowerShell)  
+- [Starship](https://starship.rs) installed and available in your `PATH`
+
+## ⚙️ One-Line Installation
 
 ```powershell
 irm https://raw.githubusercontent.com/Proce2/starship-pwsh-setup/main/install.ps1 | iex
 ```
 
-This command runs a secure script that checks your environment and installs the fix with full VSCode compatibility.
+## 🧩 Features
 
-🧩 **What This Fix Does**
+- ✅ Preserves VSCode terminal features (command status, IntelliSense)  
+- 🛡️ Safe installation with environment checks  
+- 🔌 Easy one-line install from GitHub  
 
-- Restores IntelliSense and autocomplete in the terminal
-- Enables command decorations (status icons for command success/failure)
-- Fixes Copilot prompt symbol support inside VSCode terminals
-- Adds prompt switching: Starship, AWS mode, PowerShell-native, or plain
+## 📘 Instructions
 
-🚀 **Prompt Switch Commands**
+1. **Prompt switching**:
+   - `p s` — Activate Starship prompt  
+   - `p s aws` — Activate Starship with AWS enhancements  
+   - `p a` — Activate advanced PowerShell-native prompt (maintains VSCode integration)  
+   - `p off` — Switch to standard PowerShell prompt appearance
 
-Use these to switch between prompt modes:
+2. **Copilot Agent work-around**:
+   - Keep native prompt in terminals where Copilot is needed, use Starship in others
 
-- `p s` — Use Starship prompt
-- `p s aws` — Use Starship with AWS enhancements
-- `p a` — Use native PowerShell prompt (preserves all VSCode features)
-- `p off` — Use plain PowerShell prompt
+## 🛠 Manual Installation
 
-This lets you keep full functionality where needed (e.g., Copilot) and enjoy Starship elsewhere.
-
-🛠 **Manual Installation**
-
-To install manually:
+If you prefer to install manually:
 
 ```powershell
 git clone https://github.com/Proce2/starship-pwsh-setup
@@ -51,13 +50,15 @@ cd starship-pwsh-setup
 ./install.ps1
 ```
 
-Then restart your terminal session.
+Then restart your PowerShell session.
 
-✏️ **Customization**
+## ✏️ Customization
 
-- Modify `.toml` files to change the Starship prompt design
-- Add your own PowerShell functions, aliases, or module imports to the scripts
+Feel free to modify any of the configuration files:
 
-**License**
+- Edit `.toml` files to customize Starship prompt appearance  
+- Modify the PowerShell scripts to add your own functions and customizations
+
+## 📄 License
 
 MIT
